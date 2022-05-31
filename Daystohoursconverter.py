@@ -27,4 +27,3 @@ while user_input != "exit":
     user_input = input("Hey dear user, enter number of days as a comma separated list and I will conv ert it to hours:\n")
     for num_of_days_element in user_input.split(", "):
         validate_and_execute()
-
