@@ -5,6 +5,8 @@ def days_to_units(num_of_days, conversion_unit):
         return f"{num_of_days} days are {num_of_days * 24} hours"
     elif conversion_unit == "minutes":
         return f"{num_of_days} days are {num_of_days * 24 * 60} {conversion_unit} minutes"
+    elif conversion_unit == "seconds":
+        return f"{num_of_days} days are {num_of_days * 24 * 60 * 60} {conversion_unit} seconds"
     else:
         return "unsupported unit"
 
