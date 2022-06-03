@@ -1,5 +1,3 @@
-
-
 from datetime import datetime
 
 user_input = input("Enter your goal with a deadline separated by colon\n")
