@@ -1,9 +1,11 @@
 import requests
+from pprint import pprint
 
-Username = "DevArv"
-response = requests.get("https://api.github.com/users/DevArv")
-my_projects = response.json()
-print(my_projects)
-
-for project in my_projects:
-    print(f"Project name: {project['name']}, Project url: {project['web_url']}")
+# github username
+username = "DevArv"
+# url to request
+url = f"https://api.github.com/users/DevArv"
+# make the request and return the json
+user_data = requests.get(url).json()
+# pretty print JSON data
+pprint(user_data)
